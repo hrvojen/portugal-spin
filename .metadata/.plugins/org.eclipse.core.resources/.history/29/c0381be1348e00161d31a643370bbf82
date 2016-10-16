@@ -1,0 +1,44 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class MainClass {
+
+	private static final int String = 0;
+
+	static String str="C 6Z PORCO COSTELETAS\nC 62 ERVILHAS IGLO 700G\nE 232 D PX INTEG LO 360G\nE 232 NUGETS PF POS40G UC";
+
+	private static String[] poljeStr=null;
+	private static ArrayList<String> listaStr=new ArrayList<>();
+	private static List<String> listaStr2=new ArrayList<>();
+	private static String polje[]=null;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//System.out.println(str);
+		
+		listaStr.add("C 62 PAO FORMA PO 600GR\nE 232 POLPA TOMAT. PD L3P2\nC 62 MASS PO MACARRON 750");
+		listaStr.add("2 X 0,49");
+		listaStr.add("TALHO");
+		listaStr.add("C 6Z PORCO COSTELETAS\nC 62 ERVILHAS IGLO 700G\nE 232 D PX INTEG LO 360G\nE 232 NUGETS PF POS40G UC");
+		listaStr.add("Poupança Inediata");
+		listaStr.add("Poupançe Inediata\nPoupança Isedtata");
+		
+		for(int i=0;i<listaStr.size();i++){
+			List<String> tempList;
+			if(listaStr.get(i).contains("\\n")){
+				
+				tempList=Arrays.asList(listaStr.get(i).split("\\n"));
+			}
+			listaStr.addAll(tempList);
+		}
+		
+//poljeStr = str.split("\\n");
+
+for (String string : listaStr2) {
+	System.out.println(string);
+}
+
+		}
+	}
+

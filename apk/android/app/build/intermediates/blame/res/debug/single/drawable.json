@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\hrca\\Downloads\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\launcher_icon.png",
+        "source": "C:\\Users\\hrca\\Downloads\\android\\app\\src\\main\\res\\drawable\\launcher_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\hrca\\Downloads\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\share_via_barcode.png",
+        "source": "C:\\Users\\hrca\\Downloads\\android\\app\\src\\main\\res\\drawable\\share_via_barcode.png"
+    }
+]

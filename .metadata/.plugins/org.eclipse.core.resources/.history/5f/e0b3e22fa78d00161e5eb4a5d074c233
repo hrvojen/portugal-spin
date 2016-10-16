@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+public class MainClass {
+
+	static String str="C 6Z PORCO COSTELETAS\nC 62 ERVILHAS IGLO 700G\nE 232 D PX INTEG LO 360G\nE 232 NUGETS PF POS40G UC";
+
+	private static String[] poljeStr=null;
+	private static ArrayList<String> listaStr=new ArrayList<>();
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+System.out.println(str);
+
+poljeStr = str.split("\\n");
+
+for (String string : poljeStr) {
+	System.out.println(string);
+}
+
+		}
+	}
+

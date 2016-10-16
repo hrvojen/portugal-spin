@@ -1,0 +1,29 @@
+import java.io.LineNumberInputStream;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class MainClass {
+
+	public static List<String> listaStringova=new ArrayList<>();
+	private static String pattern = "^[A-Za-z*](.\\d*.\\s)";
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		listaStringova.add("fefef");
+		listaStringova.add("fefef erere");
+		listaStringova.add("E 232323 ListaStringova");
+	    Pattern r = Pattern.compile(pattern);
+
+		for (String string : listaStringova) {
+			
+		      Matcher m = r.matcher(string);
+			if (m.find()) {
+				System.out.println(m.group(2));
+			}
+		}
+	}
+
+}

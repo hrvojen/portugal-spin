@@ -1,0 +1,24 @@
+import java.io.LineNumberInputStream;
+import java.util.ArrayList;
+import java.util.List;
+
+public class MainClass {
+
+	public static List<String> listaStringova=new ArrayList<>();
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		listaStringova.add("fefef");
+		listaStringova.add("fefef erere");
+		listaStringova.add("E 232323 ListaStringova");
+		
+
+		for (String string : listaStringova) {
+			if (string.matches("/d/s/w/s/w")) {
+				System.out.println(string);
+			}
+		}
+	}
+
+}

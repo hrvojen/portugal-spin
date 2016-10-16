@@ -1,0 +1,16 @@
+2016-10-06 09:21:44,278 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2016-10-08 20:30:11,620 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2016-10-08 23:22:15,456 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2016-10-09 16:04:14,906 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2016-10-10 12:32:12,595 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2016-10-10 19:47:48,216 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2016-10-10 20:20:00,597 [Worker-19] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: yandex-translator-java-api-master.zip_expanded:yandex-translator-java-api-master.zip_expanded:0.0.1-SNAPSHOT @ E:\backup\C\Faks-backup\portugal\yandex-translator-java-api-master.zip_expanded\pom.xml.
+2016-10-10 20:20:01,845 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: yandex-translator-java-api-master.zip_expanded:yandex-translator-java-api-master.zip_expanded:0.0.1-SNAPSHOT @ E:\backup\C\Faks-backup\portugal\yandex-translator-java-api-master.zip_expanded\pom.xml.
+2016-10-10 20:20:02,122 [Worker-15] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-10-10 20:20:02,139 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: yandex-translator-java-api-master.zip_expanded:yandex-translator-java-api-master.zip_expanded:0.0.1-SNAPSHOT @ E:\backup\C\Faks-backup\portugal\yandex-translator-java-api-master.zip_expanded\pom.xml.
+2016-10-10 20:20:02,207 [Worker-15] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-10-10 20:21:43,620 [Worker-16] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: yandex-translator-java-api-master.zip_expanded:yandex-translator-java-api-master.zip_expanded:0.0.1-SNAPSHOT @ E:\backup\C\Faks-backup\portugal\yandex-translator-java-api-master.zip_expanded\pom.xml.
+2016-10-10 20:25:44,317 [Worker-18] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|https://repo.maven.apache.org/maven2
+2016-10-10 20:31:23,374 [main] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: yandex-translator-java-api-master.zip_expanded:yandex-translator-java-api-master.zip_expanded:0.0.1-SNAPSHOT @ E:\backup\C\Faks-backup\portugal\yandex-translator-java-api-master.zip_expanded\pom.xml.
+2016-10-10 20:33:02,227 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2016-10-11 19:31:23,744 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.

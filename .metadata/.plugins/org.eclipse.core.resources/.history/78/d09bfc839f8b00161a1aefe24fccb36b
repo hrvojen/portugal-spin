@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+
+public class MainClass {
+
+	private String[] listaStringova={"E 23 String bla bla", "blaa bal baa", "ewrerw werewrw", "erererere"};
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+
+	}
+
+}

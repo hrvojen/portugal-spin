@@ -1,0 +1,19 @@
+import com.google.api.services.translate.Translate;
+
+import de.tudarmstadt.ukp.jwktl.*;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Wiktionary wiktionary = new Wiktionary(DB_PATH, Language.GERMAN);
+		wiktionary.addWiktionary(DB_PATH, Language.English);
+		wiktionary.setWordLanguage(Language.German);
+		List<WiktionaryWord> wordList = wiktionary.getWords("bank");
+		
+		
+	}
+
+}

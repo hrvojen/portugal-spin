@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Synchronization" android:key="synchronization">
+        <Preference 
+            android:key="dropbox"
+            android:title="Link to Dropbox"
+            android:summary="Push/pull your recipes from a Dropbox account."
+        />      
+    </PreferenceCategory>
+</PreferenceScreen>

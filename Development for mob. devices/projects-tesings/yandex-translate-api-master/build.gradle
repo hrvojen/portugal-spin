@@ -1,0 +1,89 @@
+
+plugins {
+    id 'java'
+    id 'groovy'
+    id 'jacoco'
+    id 'com.github.kt3k.coveralls' version '2.6.3'
+    id 'com.github.ben-manes.versions' version '0.13.0'
+    id 'ru.vyarus.quality' version '2.0.0'
+    id 'ru.vyarus.java-lib' version '1.0.3'
+    id 'net.ltgt.apt' version '0.8'
+}
+
+group 'com.github.vbauer'
+version '1.2.4'
+description 'A simple REST client library for Yandex.Translate'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+configurations.provided.extendsFrom configurations.apt
+
+dependencies {
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.google.guava:guava:19.0'
+    compile 'com.mashape.unirest:unirest-java:1.4.9'
+    compile 'io.javaslang:javaslang:2.0.3'
+    compile 'com.google.code.findbugs:annotations:3.0.1'
+
+    apt 'org.immutables:value:2.3.2'
+    apt 'org.immutables:builder:2.3.2'
+    apt 'org.immutables:gson:2.3.2'
+
+    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+    testCompile 'com.pushtorefresh.java-private-constructor-checker:checker:1.2.0'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.1'
+}
+
+compileJava {
+    String javaVersion = JavaVersion.VERSION_1_8
+
+    sourceCompatibility javaVersion
+    targetCompatibility javaVersion
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+}
+
+pom {
+    inceptionYear '2015'
+    licenses {
+        license {
+            name 'MIT License'
+            url 'http://www.opensource.org/licenses/mit-license.php'
+            distribution 'repo'
+        }
+    }
+    developers {
+        developer {
+            id 'vbauer'
+            name 'Vladislav Bauer'
+            email 'bauer.vlad@gmail.com'
+            url 'http://linkedin.com/in/vladislavbauer'
+            roles {
+                role 'Developer'
+            }
+        }
+    }
+    issueManagement {
+        system 'GitHub Issues'
+        url 'https://github.com/vbauer/yandex-translate-api/issues'
+    }
+    ciManagement {
+        system 'Travis'
+        url 'https://travis-ci.org/vbauer/yandex-translate-api'
+    }
+}
+
+quality {
+    findbugs = false
+}

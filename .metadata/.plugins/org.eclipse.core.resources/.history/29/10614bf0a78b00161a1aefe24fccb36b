@@ -1,0 +1,42 @@
+import java.io.LineNumberInputStream;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class MainClass {
+
+	public static List<String> listaStringova=new ArrayList<>();
+	private static String pattern = "^[A-Za-z*](.\\d*.\\s)";
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		listaStringova.add("fefef");
+		listaStringova.add("fefef erere");
+		listaStringova.add("E 232323 ListaStringova");
+	    Pattern r = Pattern.compile(pattern);
+
+	    
+		for (String string : listaStringova) {
+			$re1='.*?';	# Non-greedy match on filler
+			$re2='(?:[a-z][a-z]+)';	# Uninteresting: word
+			$re3='.*?';	# Non-greedy match on filler
+			$re4='(?:[a-z][a-z]+)';	# Uninteresting: word
+			$re5='.*?';	# Non-greedy match on filler
+			$re6='(?:[a-z][a-z]+)';	# Uninteresting: word
+			$re7='.*?';	# Non-greedy match on filler
+			$re8='(?:[a-z][a-z]+)';	# Uninteresting: word
+			$re9='.*?';	# Non-greedy match on filler
+			$re10='((?:[a-z][a-z]+))';	# Word 1
+
+			$re=$re1.$re2.$re3.$re4.$re5.$re6.$re7.$re8.$re9.$re10;
+			if ($txt =~ m/$re/is)
+			{
+			    $word1=$1;
+			    print "($word1) \n";
+			}
+		}
+	}
+
+}
